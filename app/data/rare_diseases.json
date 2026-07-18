@@ -533,6 +533,24 @@
           "label": "Stroke",
           "frequency": "occasional",
           "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0032657",
+          "label": "Elevated circulating lyso-globotriaosylsphingosine concentration",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0009830",
+          "label": "Peripheral neuropathy",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0031393",
+          "label": "Myocardial fibrosis",
+          "frequency": "occasional",
+          "in_hpoa": true
         }
       ],
       "discriminating_features": [

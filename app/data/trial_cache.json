@@ -1,0 +1,617 @@
+{
+ "Marfan Syndrome": [
+  {
+   "nct_id": "NCT04970459",
+   "title": "Biological Collection for Marfan and Related Syndromes",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "3 Years",
+   "max_age": "99 Years",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Toulouse, France",
+   "url": "https://clinicaltrials.gov/study/NCT04970459"
+  },
+  {
+   "nct_id": "NCT07591844",
+   "title": "Effect of Periodontal Therapy on Asprosin in Stable Angina",
+   "status": "NOT_YET_RECRUITING",
+   "phase": "NA",
+   "min_age": "18 Years",
+   "max_age": "65 Years",
+   "sex": "ALL",
+   "accepts_healthy": true,
+   "n_locations": 1,
+   "first_location": "Samsun, Turkey (T\u00fcrkiye)",
+   "url": "https://clinicaltrials.gov/study/NCT07591844"
+  },
+  {
+   "nct_id": "NCT07358533",
+   "title": "Metabolic Obesity in Normal Weight (MONW): Diagnostic Markers Stud",
+   "status": "NOT_YET_RECRUITING",
+   "phase": "N/A",
+   "min_age": "18 Years",
+   "max_age": "35 Years",
+   "sex": "FEMALE",
+   "accepts_healthy": true,
+   "n_locations": 1,
+   "first_location": "Szczecin, Poland",
+   "url": "https://clinicaltrials.gov/study/NCT07358533"
+  }
+ ],
+ "Loeys-Dietz Syndrome": [
+  {
+   "nct_id": "NCT07672210",
+   "title": "PregnAncy-Related Aortic DISsEction in China",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "16 Years",
+   "max_age": "55 Years",
+   "sex": "FEMALE",
+   "accepts_healthy": false,
+   "n_locations": 4,
+   "first_location": "Shanghai, China",
+   "url": "https://clinicaltrials.gov/study/NCT07672210"
+  },
+  {
+   "nct_id": "NCT02504853",
+   "title": "Natural History and Genetics of Food Allergy and Related Conditions",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "1 Day",
+   "max_age": "99 Years",
+   "sex": "ALL",
+   "accepts_healthy": true,
+   "n_locations": 1,
+   "first_location": "Bethesda, United States",
+   "url": "https://clinicaltrials.gov/study/NCT02504853"
+  },
+  {
+   "nct_id": "NCT02050113",
+   "title": "Complex Aortic Aneurysm Repair Using Physician Modified Endografts and Custom Made Devices",
+   "status": "RECRUITING",
+   "phase": "NA",
+   "min_age": "18 Years",
+   "max_age": "",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Worcester, United States",
+   "url": "https://clinicaltrials.gov/study/NCT02050113"
+  }
+ ],
+ "Vascular Ehlers-Danlos Syndrome": [
+  {
+   "nct_id": "NCT07626957",
+   "title": "Hamstring Strengthening in Hypermobile Conditions",
+   "status": "NOT_YET_RECRUITING",
+   "phase": "NA",
+   "min_age": "18 Years",
+   "max_age": "55 Years",
+   "sex": "FEMALE",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Calgary, Canada",
+   "url": "https://clinicaltrials.gov/study/NCT07626957"
+  },
+  {
+   "nct_id": "NCT04133272",
+   "title": "Registry of Ehlers-Danlos Syndrome",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "",
+   "max_age": "",
+   "sex": "ALL",
+   "accepts_healthy": true,
+   "n_locations": 1,
+   "first_location": "Bologna, Italy",
+   "url": "https://clinicaltrials.gov/study/NCT04133272"
+  },
+  {
+   "nct_id": "NCT07516496",
+   "title": "Metabolic Phenotyping in vEDS",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "18 Years",
+   "max_age": "85 Years",
+   "sex": "ALL",
+   "accepts_healthy": true,
+   "n_locations": 1,
+   "first_location": "Cambridge, United Kingdom",
+   "url": "https://clinicaltrials.gov/study/NCT07516496"
+  }
+ ],
+ "Fabry Disease": [
+  {
+   "nct_id": "NCT00196742",
+   "title": "Fabry Disease Registry & Pregnancy Sub-registry",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "",
+   "max_age": "",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 284,
+   "first_location": "Birmingham, United States",
+   "url": "https://clinicaltrials.gov/study/NCT00196742"
+  },
+  {
+   "nct_id": "NCT06325488",
+   "title": "Fibrosis, Inflammation, Oxygenation of Renal Tissue In FabrY Disease",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "18 Years",
+   "max_age": "",
+   "sex": "ALL",
+   "accepts_healthy": true,
+   "n_locations": 1,
+   "first_location": "Copenhagen, Denmark",
+   "url": "https://clinicaltrials.gov/study/NCT06325488"
+  },
+  {
+   "nct_id": "NCT07560956",
+   "title": "Quality of Life in Adults With Untreated Fabry Disease in Sweden (QoLUF)",
+   "status": "NOT_YET_RECRUITING",
+   "phase": "N/A",
+   "min_age": "18 Years",
+   "max_age": "",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Gothenburg, Sweden",
+   "url": "https://clinicaltrials.gov/study/NCT07560956"
+  }
+ ],
+ "Wilson Disease": [
+  {
+   "nct_id": "NCT03334292",
+   "title": "Natural History of Wilson Disease",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "",
+   "max_age": "",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 6,
+   "first_location": "New Haven, United States",
+   "url": "https://clinicaltrials.gov/study/NCT03334292"
+  },
+  {
+   "nct_id": "NCT06466291",
+   "title": "Spanish Wilson Disease Registry",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "18 Years",
+   "max_age": "",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Barcelona, Spain",
+   "url": "https://clinicaltrials.gov/study/NCT06466291"
+  },
+  {
+   "nct_id": "NCT07301216",
+   "title": "Off Treatment Urinary Copper Excretion in Wilson Disease, Pilot Study",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "18 Years",
+   "max_age": "",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "New Haven, United States",
+   "url": "https://clinicaltrials.gov/study/NCT07301216"
+  }
+ ],
+ "Gaucher Disease": [
+  {
+   "nct_id": "NCT05992532",
+   "title": "GammaGA: Prevalence of Acid Sphingomyelinase Deficiency Disease (ASMD) and Gaucher Disease in Patients With Monoclonal Gammopathies and/or Multiple Myeloma",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "18 Years",
+   "max_age": "99 Years",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 23,
+   "first_location": "Vitoria-Gasteiz, Spain",
+   "url": "https://clinicaltrials.gov/study/NCT05992532"
+  },
+  {
+   "nct_id": "NCT06517914",
+   "title": "A First-in-Human, Single- and Multiple-Ascending Dose Study of YH35995 in Healthy Adult Male Participants",
+   "status": "RECRUITING",
+   "phase": "PHASE1",
+   "min_age": "19 Years",
+   "max_age": "45 Years",
+   "sex": "MALE",
+   "accepts_healthy": true,
+   "n_locations": 1,
+   "first_location": "Seongnam, South Korea",
+   "url": "https://clinicaltrials.gov/study/NCT06517914"
+  },
+  {
+   "nct_id": "NCT05536388",
+   "title": "Drug Discovery for Parkinson's With Mutations in the GBA Gene",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "18 Years",
+   "max_age": "",
+   "sex": "ALL",
+   "accepts_healthy": true,
+   "n_locations": 1,
+   "first_location": "New York, United States",
+   "url": "https://clinicaltrials.gov/study/NCT05536388"
+  }
+ ],
+ "Pompe Disease": [
+  {
+   "nct_id": "NCT04639336",
+   "title": "Cognitive and Neurological Pathologies in Pompe Disease",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "0 Years",
+   "max_age": "18 Years",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Durham, United States",
+   "url": "https://clinicaltrials.gov/study/NCT04639336"
+  },
+  {
+   "nct_id": "NCT00231400",
+   "title": "Pompe Disease Registry Protocol",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "",
+   "max_age": "",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 272,
+   "first_location": "Birmingham, United States",
+   "url": "https://clinicaltrials.gov/study/NCT00231400"
+  },
+  {
+   "nct_id": "NCT07136844",
+   "title": "Gait Analysis Parameter and Upper Limb Evaluation in Adult Patients With Neurological or Metabolic Pathology",
+   "status": "RECRUITING",
+   "phase": "NA",
+   "min_age": "18 Years",
+   "max_age": "",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Li\u00e8ge, Belgium",
+   "url": "https://clinicaltrials.gov/study/NCT07136844"
+  }
+ ],
+ "Hemochromatosis": [
+  {
+   "nct_id": "NCT07028112",
+   "title": "Impact of Iron Overload on the Incidence of Liver Complications in Long-Term Survivors (\u226510 Years) of Allogeneic Hematopoietic Stem-Cell Transplantation.",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "18 Years",
+   "max_age": "",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Paris, France",
+   "url": "https://clinicaltrials.gov/study/NCT07028112"
+  },
+  {
+   "nct_id": "NCT07371793",
+   "title": "A Study to Evaluate BBI-001 in Healthy Volunteers and in Patients With Hereditary Hemochromatosis",
+   "status": "RECRUITING",
+   "phase": "PHASE1, PHASE2",
+   "min_age": "18 Years",
+   "max_age": "70 Years",
+   "sex": "ALL",
+   "accepts_healthy": true,
+   "n_locations": 1,
+   "first_location": "Sydney, Australia",
+   "url": "https://clinicaltrials.gov/study/NCT07371793"
+  },
+  {
+   "nct_id": "NCT03131427",
+   "title": "China Registry for Genetic / Metabolic Liver Diseases",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "",
+   "max_age": "",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 12,
+   "first_location": "Beijing, China",
+   "url": "https://clinicaltrials.gov/study/NCT03131427"
+  }
+ ],
+ "Hereditary Hemorrhagic Telangiectasia": [
+  {
+   "nct_id": "NCT04976036",
+   "title": "Efficacy of Nintedanib for Treatment of Epistaxis in Hereditary Hemorrhagic Telangiectasia (HHT) Patients",
+   "status": "RECRUITING",
+   "phase": "PHASE2",
+   "min_age": "18 Years",
+   "max_age": "",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 3,
+   "first_location": "Bron, France",
+   "url": "https://clinicaltrials.gov/study/NCT04976036"
+  },
+  {
+   "nct_id": "NCT07667413",
+   "title": "Topical TOR-582 Treatment of Epistaxis in HHT",
+   "status": "RECRUITING",
+   "phase": "PHASE1",
+   "min_age": "18 Years",
+   "max_age": "",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "New York, United States",
+   "url": "https://clinicaltrials.gov/study/NCT07667413"
+  },
+  {
+   "nct_id": "NCT07474428",
+   "title": "Quality of Life in Pediatric Participants With HHT",
+   "status": "NOT_YET_RECRUITING",
+   "phase": "N/A",
+   "min_age": "2 Years",
+   "max_age": "25 Years",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Cincinnati, United States",
+   "url": "https://clinicaltrials.gov/study/NCT07474428"
+  }
+ ],
+ "Alport Syndrome": [
+  {
+   "nct_id": "NCT07211685",
+   "title": "A Study to Learn About How Well BAY 3401016 Works in Adults With Alport Syndrome",
+   "status": "RECRUITING",
+   "phase": "PHASE2",
+   "min_age": "18 Years",
+   "max_age": "45 Years",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 60,
+   "first_location": "Birmingham, United States",
+   "url": "https://clinicaltrials.gov/study/NCT07211685"
+  },
+  {
+   "nct_id": "NCT05944016",
+   "title": "Phase 3 Clinical Trial with Dapagliflozin in Chronic Kidney Disease in Adolescents and Young Adult Patients",
+   "status": "RECRUITING",
+   "phase": "PHASE3",
+   "min_age": "10 Years",
+   "max_age": "39 Years",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 16,
+   "first_location": "Heidelberg, Germany",
+   "url": "https://clinicaltrials.gov/study/NCT05944016"
+  },
+  {
+   "nct_id": "NCT05133050",
+   "title": "Safety and Efficacy of ACEI in Alport Syndrome Patients With COL4A3/COL4A4/COL4A5 Variants",
+   "status": "NOT_YET_RECRUITING",
+   "phase": "NA",
+   "min_age": "30 Years",
+   "max_age": "50 Years",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Shanghai, China",
+   "url": "https://clinicaltrials.gov/study/NCT05133050"
+  }
+ ],
+ "Tuberous Sclerosis Complex": [
+  {
+   "nct_id": "NCT06160310",
+   "title": "Tuberous Sclerosis Complex and Lymphangioleiomyomatosis Pregnancy Registry (TSC-LAM Registry)",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "",
+   "max_age": "",
+   "sex": "FEMALE",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Cincinnati, United States",
+   "url": "https://clinicaltrials.gov/study/NCT06160310"
+  },
+  {
+   "nct_id": "NCT05104983",
+   "title": "Stopping TSC Onset and Progression 2B: Sirolimus TSC Epilepsy Prevention Study",
+   "status": "RECRUITING",
+   "phase": "PHASE2",
+   "min_age": "1 Day",
+   "max_age": "6 Months",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 11,
+   "first_location": "Birmingham, United States",
+   "url": "https://clinicaltrials.gov/study/NCT05104983"
+  },
+  {
+   "nct_id": "NCT06764602",
+   "title": "Observational, Retrospective, Multicenter, Nonprofit Study on the Prevalence of Renal Involvement in Pediatric Patients With Tuberous Sclerosis",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "",
+   "max_age": "17 Years",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Bologna, Italy",
+   "url": "https://clinicaltrials.gov/study/NCT06764602"
+  }
+ ],
+ "Neurofibromatosis Type 1": [
+  {
+   "nct_id": "NCT06763315",
+   "title": "Low-dose Selumetinib for the Treatment of Plexiform Neurofibromas in Chinese Children",
+   "status": "NOT_YET_RECRUITING",
+   "phase": "PHASE2",
+   "min_age": "3 Years",
+   "max_age": "18 Years",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Chengdu, China",
+   "url": "https://clinicaltrials.gov/study/NCT06763315"
+  },
+  {
+   "nct_id": "NCT06188741",
+   "title": "Selumetinib for the Prevention of Plexiform Neurofibroma Growth in NF Type 1",
+   "status": "RECRUITING",
+   "phase": "PHASE2",
+   "min_age": "1 Year",
+   "max_age": "8 Years",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 15,
+   "first_location": "Birmingham, United States",
+   "url": "https://clinicaltrials.gov/study/NCT06188741"
+  },
+  {
+   "nct_id": "NCT00598351",
+   "title": "Natural History Study of Patients With Neurofibromatosis Type 2",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "8 Years",
+   "max_age": "75 Years",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Bethesda, United States",
+   "url": "https://clinicaltrials.gov/study/NCT00598351"
+  }
+ ],
+ "MELAS Syndrome": [
+  {
+   "nct_id": "NCT06451757",
+   "title": "KHENERFIN Study: A Trial to Evaluate the Efficacy and Safety of Sonlicromanol in Primary Mitochondrial Diseases",
+   "status": "RECRUITING",
+   "phase": "PHASE3",
+   "min_age": "18 Years",
+   "max_age": "",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 10,
+   "first_location": "Boston, United States",
+   "url": "https://clinicaltrials.gov/study/NCT06451757"
+  },
+  {
+   "nct_id": "NCT05554835",
+   "title": "Global Registry and Natural History Study for Mitochondrial Disorders",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "",
+   "max_age": "",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 33,
+   "first_location": "Innsbruck, Austria",
+   "url": "https://clinicaltrials.gov/study/NCT05554835"
+  },
+  {
+   "nct_id": "NCT06792500",
+   "title": "A Basket Clinical Study to Assess Glycerol Tributyrate in Patients With Mitochondrial Encephalopathy, Lactic Acidosis, Stroke-like Episodes (MELAS) or Leber's Hereditary Optic Neuropathy-Plus (LHON-Plus)",
+   "status": "NOT_YET_RECRUITING",
+   "phase": "PHASE1, PHASE2",
+   "min_age": "18 Years",
+   "max_age": "65 Years",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Washington D.C., United States",
+   "url": "https://clinicaltrials.gov/study/NCT06792500"
+  }
+ ],
+ "Behcet Syndrome": [
+  {
+   "nct_id": "NCT07065747",
+   "title": "Quantification & Classification of Inflammatory Cells in Uveitis Using OCT",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "5 Years",
+   "max_age": "85 Years",
+   "sex": "ALL",
+   "accepts_healthy": true,
+   "n_locations": 1,
+   "first_location": "Portland, United States",
+   "url": "https://clinicaltrials.gov/study/NCT07065747"
+  },
+  {
+   "nct_id": "NCT06794008",
+   "title": "BCMA-CD19 CAR-T Therapy for Refractory Autoimmune Diseases",
+   "status": "RECRUITING",
+   "phase": "PHASE2",
+   "min_age": "18 Years",
+   "max_age": "65 Years",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Beijing, China",
+   "url": "https://clinicaltrials.gov/study/NCT06794008"
+  },
+  {
+   "nct_id": "NCT05845723",
+   "title": "Tocilizumab and Tofacitinib in the Treatment of Vascular Beh\u00e7et's Syndrome",
+   "status": "RECRUITING",
+   "phase": "PHASE2",
+   "min_age": "18 Years",
+   "max_age": "65 Years",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Beijing, China",
+   "url": "https://clinicaltrials.gov/study/NCT05845723"
+  }
+ ],
+ "22q11.2 Deletion Syndrome": [
+  {
+   "nct_id": "NCT05664412",
+   "title": "Using Transcranial Alternating Current Stimulation to Improve Executive Function in 22q11.2 Deletion Syndrome",
+   "status": "RECRUITING",
+   "phase": "NA",
+   "min_age": "14 Years",
+   "max_age": "25 Years",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Geneva, Switzerland",
+   "url": "https://clinicaltrials.gov/study/NCT05664412"
+  },
+  {
+   "nct_id": "NCT05924347",
+   "title": "Early Scoliotic Changes in Children at Increased Risk for Scoliosis Development",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "min_age": "8 Years",
+   "max_age": "11 Years",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Utrecht, Netherlands",
+   "url": "https://clinicaltrials.gov/study/NCT05924347"
+  },
+  {
+   "nct_id": "NCT07284641",
+   "title": "Hematopoietic Stem Cell Transplantation (HSCT) for Common Variable Immunodeficiency (CVID) and Other Autoimmune Manifestations of Primary Immune Regulatory Disorders (PIRD)",
+   "status": "RECRUITING",
+   "phase": "PHASE2",
+   "min_age": "5 Years",
+   "max_age": "40 Years",
+   "sex": "ALL",
+   "accepts_healthy": false,
+   "n_locations": 1,
+   "first_location": "Pittsburgh, United States",
+   "url": "https://clinicaltrials.gov/study/NCT07284641"
+  }
+ ]
+}

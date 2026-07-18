@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phenotype Agent — rare disease decision support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EDF0F3; --card:#FFFFFF; --ink:#12233A; --ink-soft:#4A5B6E; --rule:#D2D9E0;
+  --verified:#0E6E6B; --caution:#B4690E; --urgent:#A02334; --accent:#1C4E80;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --sans:"IBM Plex Sans",system-ui,sans-serif;
+  --serif:"IBM Plex Serif",Georgia,serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+
+/* ---- masthead ---- */
+header{border-bottom:1px solid var(--rule);background:var(--card)}
+.masthead{max-width:1180px;margin:0 auto;padding:18px 24px;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+h1{font-family:var(--serif);font-weight:600;font-size:20px;margin:0;letter-spacing:-.01em}
+.tag{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-soft)}
+.stats{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--ink-soft);display:flex;gap:14px;flex-wrap:wrap}
+.stats b{font-weight:600;color:var(--ink)}
+
+/* ---- layout ---- */
+main{max-width:1180px;margin:0 auto;padding:24px;display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:24px;align-items:start}
+@media(max-width:900px){main{grid-template-columns:1fr;padding:16px}}
+.panel{background:var(--card);border:1px solid var(--rule);border-radius:2px}
+.panel-head{padding:12px 16px;border-bottom:1px solid var(--rule);display:flex;align-items:center;gap:10px}
+.panel-head h2{font-family:var(--mono);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.09em;margin:0;color:var(--ink-soft)}
+.panel-body{padding:16px}
+
+/* ---- input ---- */
+textarea{width:100%;min-height:280px;resize:vertical;border:1px solid var(--rule);border-radius:2px;padding:12px;font-family:var(--mono);font-size:12.5px;line-height:1.6;color:var(--ink);background:#FBFCFD}
+textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.row{display:flex;gap:8px;margin-top:12px;align-items:center;flex-wrap:wrap}
+button{font-family:var(--sans);font-size:14px;font-weight:500;padding:9px 18px;border-radius:2px;border:1px solid var(--ink);background:var(--ink);color:#fff;cursor:pointer}
+button:hover:not(:disabled){background:#1B3352}
+button:disabled{opacity:.45;cursor:not-allowed}
+button.ghost{background:transparent;color:var(--ink);border-color:var(--rule)}
+button.ghost:hover:not(:disabled){background:#F2F5F8}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.hint{font-size:12px;color:var(--ink-soft)}
+
+/* ---- SIGNATURE: agent trace ---- */
+.trace{margin-top:20px;border-top:1px solid var(--rule);padding-top:14px}
+.trace-title{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-soft);margin-bottom:10px}
+.step{display:grid;grid-template-columns:22px 1fr auto;gap:10px;padding:9px 0;border-bottom:1px dotted var(--rule);align-items:start}
+.step:last-child{border-bottom:0}
+.dot{width:22px;height:22px;border-radius:50%;border:1.5px solid var(--rule);display:grid;place-items:center;font-family:var(--mono);font-size:10px;font-weight:600;color:var(--ink-soft);background:#fff;flex:none}
+.step.run .dot{border-color:var(--accent);color:var(--accent);animation:pulse 1.1s ease-in-out infinite}
+.step.done .dot{border-color:var(--verified);background:var(--verified);color:#fff}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+@media(prefers-reduced-motion:reduce){.step.run .dot{animation:none}}
+.step .name{font-weight:500;font-size:13.5px}
+.step .note{font-size:12px;color:var(--ink-soft)}
+.step .detail{font-size:12.5px;color:var(--ink);margin-top:3px}
+.ms{font-family:var(--mono);font-size:11px;color:var(--ink-soft);white-space:nowrap;padding-top:2px}
+.step.idle{opacity:.45}
+
+/* ---- results ---- */
+.empty{padding:56px 24px;text-align:center;color:var(--ink-soft)}
+.empty p{margin:6px 0;font-size:13.5px}
+.sec{padding:18px 20px;border-bottom:1px solid var(--rule)}
+.sec:last-child{border-bottom:0}
+.sec-label{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-soft);margin-bottom:12px;display:flex;gap:8px;align-items:baseline}
+.sec-label .n{color:var(--accent);font-weight:600}
+
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--mono);font-size:11.5px;border:1px solid var(--rule);border-radius:2px;padding:4px 8px;background:#F7F9FB;display:inline-flex;gap:6px;align-items:baseline}
+.chip .code{color:var(--verified);font-weight:600}
+.chip.amber{background:#FDF6EC;border-color:#EBD6B4}
+.chip.amber .code{color:var(--caution)}
+.chip.mute{background:#F2F4F6;color:var(--ink-soft);border-style:dashed}
+.sub{font-size:12px;color:var(--ink-soft);margin-top:10px}
+
+.cand{border:1px solid var(--rule);border-left:3px solid var(--rule);border-radius:2px;padding:12px 14px;margin-bottom:10px;background:#FCFDFE}
+.cand.high{border-left-color:var(--verified)}
+.cand.moderate{border-left-color:var(--caution)}
+.cand.low{border-left-color:var(--rule)}
+.cand-top{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.cand-name{font-family:var(--serif);font-size:16px;font-weight:600}
+.cand-rank{font-family:var(--mono);font-size:11px;color:var(--ink-soft)}
+.bar{height:3px;background:var(--rule);border-radius:2px;margin:8px 0 6px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent)}
+.cand-meta{font-family:var(--mono);font-size:11px;color:var(--ink-soft)}
+.cand-why{font-size:12.5px;margin-top:6px;color:var(--ink-soft)}
+.cand-why b{color:var(--ink);font-weight:500}
+
+.flag{border-left:3px solid var(--urgent);background:#FCF2F3;padding:10px 12px;margin-bottom:8px;font-size:13px}
+.flag b{color:var(--urgent)}
+.order{border:1px solid var(--rule);border-radius:2px;padding:12px 14px;margin-bottom:10px}
+.order h4{margin:0 0 6px;font-family:var(--serif);font-size:15px;font-weight:600}
+.kv{font-size:13px;margin:3px 0}
+.kv span{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-soft);margin-right:6px}
+.genes{font-family:var(--mono);font-size:12px;color:var(--accent)}
+.shared{background:#EDF4F4;border:1px solid #BFD9D8;padding:10px 12px;font-size:13px;margin-bottom:12px;border-radius:2px}
+.trial{font-size:12.5px;margin:3px 0 3px 12px}
+.trial a{font-family:var(--mono);font-size:11.5px}
+footer{max-width:1180px;margin:0 auto;padding:0 24px 40px;font-size:11.5px;color:var(--ink-soft);line-height:1.7}
+.err{background:#FCF2F3;border:1px solid #E4C0C5;padding:12px;font-size:13px;border-radius:2px;color:var(--urgent)}
+.err pre{font-family:var(--mono);font-size:11px;white-space:pre-wrap;margin:8px 0 0;color:var(--ink-soft)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="masthead">
+    <h1>Phenotype Agent</h1>
+    <span class="tag">rare disease decision support</span>
+    <div class="stats" id="stats"><span>loading index…</span></div>
+  </div>
+</header>
+
+<main>
+  <!-- LEFT: input + trace -->
+  <section class="panel">
+    <div class="panel-head"><h2>Clinical note</h2></div>
+    <div class="panel-body">
+      <textarea id="note" placeholder="Paste a clinical note or ambient visit transcript.
+
+The agent reads it the way a geneticist would: pulling every finding, mapping each to a standard code, then checking whether the combination matches a rare disease that no single specialist would have seen."></textarea>
+      <div class="row">
+        <button id="run">Analyze note</button>
+        <button id="load" class="ghost">Load example</button>
+        <span class="hint" id="hint"></span>
+      </div>
+
+      <div class="trace">
+        <div class="trace-title">Agent trace</div>
+        <div id="steps"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RIGHT: results -->
+  <section class="panel">
+    <div class="panel-head"><h2>Findings</h2><span class="tag" id="tier"></span></div>
+    <div id="out">
+      <div class="empty">
+        <p><strong>No note analyzed yet.</strong></p>
+        <p>Paste a note, or load a published case report with the diagnosis redacted.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Clinical decision support — not a diagnosis. Phenotype codes come from the Human Phenotype Ontology;
+  gene panels from curated Orphanet/OMIM references; trials from ClinicalTrials.gov.
+  No gene, code, or panel on this page is model-generated.
+</footer>
+
+<script>
+const $ = s => document.querySelector(s);
+const STAGES = [
+  {n:1, name:"Reading the note",        note:"Claude restates findings in clinical terms"},
+  {n:2, name:"Mapping to HPO codes",    note:"Deterministic lookup — no model involved"},
+  {n:3, name:"Ranking the differential",note:"Weighted phenotype overlap — arithmetic"},
+  {n:4, name:"Planning next steps",     note:"Panels from curated data, trials live"},
+];
+const esc = s => String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function drawSteps(state={}){
+  $("#steps").innerHTML = STAGES.map(s=>{
+    const st = state[s.n] || {cls:"idle"};
+    return `<div class="step ${st.cls}">
+      <div class="dot">${st.cls==="done"?"✓":s.n}</div>
+      <div><div class="name">${s.name}</div>
+        <div class="note">${st.detail?"":s.note}</div>
+        ${st.detail?`<div class="detail">${esc(st.detail)}</div>`:""}</div>
+      <div class="ms">${st.ms!=null?st.ms+" ms":""}</div></div>`;
+  }).join("");
+}
+drawSteps();
+
+fetch("/health").then(r=>r.json()).then(h=>{
+  $("#stats").innerHTML =
+    `<span><b>${h.hpo_terms.toLocaleString()}</b> HPO terms</span>
+     <span><b>${h.curated_diseases}</b> curated</span>
+     ${h.broad_diseases?`<span><b>${h.broad_diseases.toLocaleString()}</b> ranked</span>`:""}`;
+}).catch(()=>{$("#stats").textContent="index unavailable";});
+
+$("#load").onclick = async () => {
+  $("#load").disabled = true;
+  try{
+    const r = await fetch("/example"); const d = await r.json();
+    if(d.text){ $("#note").value = d.text; $("#hint").textContent = d.kind; }
+  }catch{ $("#hint").textContent = "No bundled example found."; }
+  $("#load").disabled = false;
+};
+
+$("#run").onclick = async () => {
+  const text = $("#note").value.trim();
+  if(!text){ $("#hint").textContent = "Paste a note first."; return; }
+  $("#run").disabled = true; $("#run").textContent = "Analyzing…";
+  $("#hint").textContent = ""; $("#tier").textContent = "";
+  const state = {}; drawSteps(state);
+  $("#out").innerHTML = `<div class="empty"><p>Working through the note…</p></div>`;
+
+  try{
+    const res = await fetch("/analyze",{method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({text, with_trials:true})});
+
+    const reader = res.body.getReader(); const dec = new TextDecoder();
+    let buf = "";
+    while(true){
+      const {done, value} = await reader.read(); if(done) break;
+      buf += dec.decode(value,{stream:true});
+      const frames = buf.split("\n\n"); buf = frames.pop();
+      for(const f of frames){
+        const ev = (f.match(/^event: (.+)$/m)||[])[1];
+        const dm = f.match(/^data: (.+)$/m); if(!dm) continue;
+        const d = JSON.parse(dm[1]);
+        if(ev==="stage_begin"){ state[d.stage]={cls:"run"}; drawSteps(state); }
+        if(ev==="stage_end"){ state[d.stage]={cls:"done",ms:d.ms,detail:d.detail}; drawSteps(state); }
+        if(ev==="result") render(d);
+        if(ev==="error") $("#out").innerHTML =
+          `<div class="sec"><div class="err"><b>${esc(d.message)}</b><pre>${esc(d.trace||"")}</pre></div></div>`;
+      }
+    }
+  }catch(e){
+    $("#out").innerHTML = `<div class="sec"><div class="err">Connection failed: ${esc(e.message)}</div></div>`;
+  }
+  $("#run").disabled = false; $("#run").textContent = "Analyze note";
+};
+
+function render(d){
+  $("#tier").textContent = d.tier==="broad"
+    ? `${d.searched.toLocaleString()} diseases · ranking only`
+    : `${d.searched} curated diseases · ${d.total_ms} ms`;
+
+  const ok = d.phenotypes.filter(p=>p.trusted), miss = d.phenotypes.filter(p=>!p.trusted);
+  let h = "";
+
+  // 1. phenotypes
+  h += `<div class="sec"><div class="sec-label"><span class="n">01</span> Standardized phenotypes</div><div class="chips">`;
+  h += ok.map(p=>`<span class="chip"><span class="code">${esc(p.hpo_id)}</span>${esc(p.label)}</span>`).join("");
+  h += miss.map(p=>`<span class="chip amber"><span class="code">unmapped</span>${esc(p.query)}</span>`).join("");
+  h += `</div>`;
+  if(d.negated.length||d.family.length){
+    h += `<div class="sub">`;
+    if(d.negated.length) h += `Ruled out: ${d.negated.map(esc).join(", ")}. `;
+    if(d.family.length) h += `Family history (not scored): ${d.family.map(esc).join(", ")}.`;
+    h += `</div>`;
+  }
+  h += `<div class="sub">${ok.length} of ${d.phenotypes.length} findings mapped to verified codes (${Math.round(d.grounding_rate*100)}%).</div></div>`;
+
+  // 2. differential
+  h += `<div class="sec"><div class="sec-label"><span class="n">02</span> Differential</div>`;
+  if(!d.differential.length){
+    h += `<p class="sub">No rare disease pattern scored above threshold. For a routine note, this is the correct result.</p>`;
+  } else {
+    const max = d.differential[0].score || 1;
+    h += d.differential.map((c,i)=>{
+      const why = (c.matched||[]).slice(0,3).map(m=>esc(m.label)).join(", ");
+      const against = (c.missing_obligate||[]).slice(0,2).map(m=>esc(m.label)).join(", ");
+      return `<div class="cand ${c.confidence}">
+        <div class="cand-top"><span class="cand-name">${esc(c.name)}</span>
+          <span class="cand-rank">#${i+1} · ${c.confidence}</span></div>
+        <div class="bar"><i style="width:${Math.round(100*c.score/max)}%"></i></div>
+        <div class="cand-meta">score ${c.score.toFixed(2)} · covers ${Math.round(c.coverage*100)}% of profile · ${esc(c.disease_id)}</div>
+        ${why?`<div class="cand-why"><b>Supports:</b> ${why}</div>`:""}
+        ${against?`<div class="cand-why"><b>Argues against:</b> ${against} not documented</div>`:""}
+      </div>`;
+    }).join("");
+  }
+  h += `</div>`;
+
+  // 3. actions
+  h += `<div class="sec"><div class="sec-label"><span class="n">03</span> Next best clinical action</div>`;
+  const a = d.actions;
+  if(!a.plans.length){
+    h += `<p class="sub">No verified workup — the leading candidate sits outside the curated set. Follow the source link for reference material.</p>`;
+  } else {
+    (a.urgent_flags||[]).slice(0,3).forEach(f=>{
+      h += `<div class="flag"><b>${esc(f.disease)}</b> — ${esc(f.flag)}</div>`;
+    });
+    if(a.shared_panels&&a.shared_panels.length){
+      const s = a.shared_panels[0];
+      h += `<div class="shared"><b>One order covers the top candidates.</b> ${esc(s.panel)} covers ${s.covers.map(esc).join(" and ")} — the differential does not need to be resolved first.</div>`;
+    }
+    h += a.plans.map(p=>`
+      <div class="order">
+        <h4>${p.rank}. ${esc(p.disease)}</h4>
+        <div class="kv"><span>order</span>${esc(p.test.name)} — ${esc(p.test.type)}</div>
+        ${p.test.genes.length?`<div class="kv"><span>genes</span><span class="genes">${p.test.genes.map(esc).join(", ")}</span></div>`:""}
+        ${p.test.turnaround?`<div class="kv"><span>result in</span>${esc(p.test.turnaround)}</div>`:""}
+        ${p.test.adjunct.length?`<div class="kv"><span>also</span>${p.test.adjunct.map(esc).join(" · ")}</div>`:""}
+        ${p.discriminating_features.length?`<div class="kv"><span>look for</span>${esc(p.discriminating_features[0])}</div>`:""}
+        ${p.trials.length?`<div class="kv"><span>trials</span>${p.trials_source}</div>`+
+          p.trials.map(t=>`<div class="trial"><a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.nct_id)}</a> ${esc(t.title.slice(0,72))}</div>`).join(""):""}
+        <div class="kv" style="margin-top:6px"><span>source</span>${esc(p.source)}</div>
+      </div>`).join("");
+  }
+  h += `</div>`;
+  $("#out").innerHTML = h;
+}
+</script>
+</body>
+</html>
