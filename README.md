@@ -1,4 +1,4 @@
-# Rare Disease Agent
+# Rare Disease Phenotype Agent
 
 Rare disease patients wait five to seven years for a diagnosis. The striking part
 of that number is that it rarely reflects an unknowable answer. It reflects clues
@@ -7,7 +7,7 @@ saw a thick heart wall. The nephrologist saw protein in the urine. A
 rheumatologist saw joint pain and recorded fibromyalgia. Each reading was
 reasonable in isolation. Nothing ever placed the three findings on the same page.
 
-Phenotype Agent puts them on the same page. Given a clinical note, it returns
+Rare Disease Phenotype Agent puts them on the same page. Given a clinical note, it returns
 standardized phenotypes, a ranked differential, and the specific diagnostic test
 to order next.
 
