@@ -17,8 +17,6 @@ Built in one day for the Abridge × Anthropic × Lightspeed hackathon, July 2026
 
 ## The decision the system rests on
 
-**Claude reads. It never decides.**
-
 Stage 1 is the only place a language model touches the problem, and its role is
 narrower than it first appears: read messy prose and re-express each finding in
 standard clinical terminology. "Burning pain in his hands since he was a kid"
