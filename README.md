@@ -136,8 +136,16 @@ valuable than a better headline number would have been.
   system ranks a cardiomyopathy first. This is the genuine ceiling of phenotype
   matching, and it is the same ceiling clinicians encounter — which is precisely
   why that patient went undiagnosed for years.
-- **Eight of the fifteen curated diseases** have cases in the benchmark. The
-  remainder are validated only by construction.
+- **Uneven performance across curated diseases.** Eight of the fifteen have cases in
+  the benchmark; the remainder are validated only by construction. Performance also
+  varies significantly: Marfan and hereditary hemorrhagic telangiectasia reach 100%
+  top-1, while Loeys-Dietz reaches 30% — it is misranked as Marfan in 140 of 235
+  cases. That confusion is expected: the two conditions were considered a single
+  entity until 2005, share aortic, skeletal, and ocular features, and the findings
+  that separate them (bifid uvula, hypertelorism, arterial tortuosity) are
+  frequently absent from a published phenotype list. Both conditions are covered by
+  the same thoracic aortic aneurysm panel, so the top-3 result still produces the
+  correct order.
 - **The broad tier is unbenchmarked.** Its results are labeled ranking-only, with
   no test recommendation attached.
 - This is decision support, not diagnosis. It surfaces candidates for clinician
