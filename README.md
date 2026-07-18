@@ -1,4 +1,4 @@
-# Phenotype Agent
+# Rare Disease Agent
 
 Rare disease patients wait five to seven years for a diagnosis. The striking part
 of that number is that it rarely reflects an unknowable answer. It reflects clues
