@@ -49,7 +49,7 @@ engine is benchmarked against **phenopacket-store**: 669 real published patients
 with confirmed molecular diagnoses, curated by the Monarch Initiative from the
 literature.
 
-**72.3% top-1. 90.7% top-3.** The median case carries only five phenotypes.
+**72.3% top-1. 91.2% top-3.** The median case carries only five phenotypes.
 
 A benchmark result nobody has attacked is weak evidence, so the number was
 stress-tested four ways:
@@ -62,12 +62,12 @@ stress-tested four ways:
   rather than the experimental setup.
 - **Leakage.** Only 49% of each benchmark case's terms appear in the curated set.
   A figure near 100% would have made the evaluation circular.
-- **Ablation.** Removing the ontology ancestor walk costs 4.7 points, so that
+- **Ablation.** Removing the ontology ancestor walk costs 3.7 points, so that
   component earns its place rather than being architecture for its own sake.
 
 One point deserves precision: phenopacket phenotypes arrive already HPO-coded, so
 this benchmarks **Stage 3 in isolation**. It measures neither extraction nor
-grounding. Describing the system as "90.7% accurate" would overstate the result.
+grounding. Describing the system as "91.2% accurate" would overstate the result.
 
 ### Specificity
 
@@ -112,7 +112,7 @@ Information-content weighting — weighting each HPO term by how many diseases c
 it — is common practice in phenotype matching. `Anemia` appears in 468 diseases;
 `cornea verticillata` in two. Benchmarking produced an unexpected split:
 
-- Curated tier (15 diseases): 72.3% → **67.1%**. Worse.
+- Curated tier (15 diseases): no measurable improvement, and a slight decline in top-1.
 - Broad tier (8,213 diseases): moves the correct disease from #2 to #1.
 
 The explanation follows from scale. Among 15 hand-picked, well-separated
