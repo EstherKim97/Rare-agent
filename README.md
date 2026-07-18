@@ -74,12 +74,15 @@ wolf across a health system's notes will be switched off within a week, and
 should be.
 
 Common primary-care findings — obesity, hypertension, hyperlipidemia, pain —
-score **0.075** against a 0.55 confidence threshold. Abridge's 25 synthetic
-encounters, spanning annual physicals, prenatal intakes, and skilled-nursing
-admissions, produce no confident rare-disease call. Both behaviors are enforced
-by automated tests rather than assumed: `python scripts/test_differential.py`
-runs 18 checks covering scoring correctness, clinical behavior, false-positive
+score **0.075** against a 0.55 confidence threshold. This is enforced by an
+automated test rather than assumed: `python scripts/test_differential.py` runs
+18 checks covering scoring correctness, clinical behavior, false-positive
 control, and benchmark validity.
+
+As an end-to-end check, all 25 encounters in Abridge's synthetic dataset —
+annual physicals, prenatal intakes, hospice and skilled-nursing admissions —
+were run through the full pipeline. **Zero produced a high-confidence rare
+disease call.**
 
 ---
 
