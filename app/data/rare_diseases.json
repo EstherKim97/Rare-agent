@@ -1,0 +1,2091 @@
+{
+  "schema_version": "1.0",
+  "hpo_release": "2025-09-01",
+  "disease_count": 15,
+  "note": "Hackathon demo subset. Curated clinical metadata; phenotypes verified against HPO.",
+  "diseases": [
+    {
+      "id": "ORPHA:558",
+      "omim": "154700",
+      "name": "Marfan syndrome",
+      "inheritance": "Autosomal dominant",
+      "prevalence": "1-5 / 10,000",
+      "organ_systems": [
+        "cardiovascular",
+        "ocular",
+        "skeletal"
+      ],
+      "phenotypes": [
+        {
+          "hpo_id": "HP:0002647",
+          "label": "Aortic dissection",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002616",
+          "label": "Aortic root aneurysm",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001166",
+          "label": "Arachnodactyly",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001519",
+          "label": "Disproportionate tall stature",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0100775",
+          "label": "Dural ectasia",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001083",
+          "label": "Ectopia lentis",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002705",
+          "label": "High, narrow palate",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001382",
+          "label": "Joint hypermobility",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001634",
+          "label": "Mitral valve prolapse",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000545",
+          "label": "Myopia",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000768",
+          "label": "Pectus carinatum",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000767",
+          "label": "Pectus excavatum",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001763",
+          "label": "Pes planus",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002650",
+          "label": "Scoliosis",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002108",
+          "label": "Spontaneous pneumothorax",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001065",
+          "label": "Striae distensae",
+          "frequency": "frequent",
+          "in_hpoa": true
+        }
+      ],
+      "discriminating_features": [
+        "Ectopia lentis (upward lens dislocation)",
+        "Aortic root dilatation at the sinuses of Valsalva",
+        "Dural ectasia on MRI"
+      ],
+      "commonly_misdiagnosed_as": [
+        "Loeys-Dietz syndrome",
+        "Vascular Ehlers-Danlos syndrome",
+        "Homocystinuria",
+        "Familial thoracic aortic aneurysm"
+      ],
+      "recommended_test": {
+        "type": "Targeted gene panel",
+        "panel_name": "Thoracic Aortic Aneurysm / Connective Tissue Panel",
+        "genes": [
+          "FBN1",
+          "TGFBR1",
+          "TGFBR2",
+          "SMAD3",
+          "ACTA2",
+          "MYH11",
+          "COL3A1"
+        ],
+        "turnaround": "2-4 weeks",
+        "adjunct": [
+          "Transthoracic echocardiogram with aortic root Z-score",
+          "Slit-lamp exam with dilated pupils"
+        ]
+      },
+      "red_flags": [
+        "Aortic root Z-score >2 or rapid growth -> urgent cardiothoracic referral",
+        "Acute chest/back pain in a Marfanoid patient = dissection until proven otherwise"
+      ],
+      "trial_query": "Marfan Syndrome",
+      "source": "Orphanet ORPHA:558 / OMIM 154700 / HPO 2025-09-01"
+    },
+    {
+      "id": "ORPHA:60030",
+      "omim": "609192",
+      "name": "Loeys-Dietz syndrome",
+      "inheritance": "Autosomal dominant",
+      "prevalence": "<1 / 1,000,000",
+      "organ_systems": [
+        "cardiovascular",
+        "craniofacial",
+        "skeletal",
+        "cutaneous"
+      ],
+      "phenotypes": [
+        {
+          "hpo_id": "HP:0004942",
+          "label": "Aortic aneurysm",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002647",
+          "label": "Aortic dissection",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0005294",
+          "label": "Arterial dissection",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0005116",
+          "label": "Arterial tortuosity",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000987",
+          "label": "Atypical scarring of skin",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000193",
+          "label": "Bifid uvula",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000592",
+          "label": "Blue sclerae",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000175",
+          "label": "Cleft palate",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001363",
+          "label": "Craniosynostosis",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000316",
+          "label": "Hypertelorism",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001382",
+          "label": "Joint hypermobility",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002650",
+          "label": "Scoliosis",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001762",
+          "label": "Talipes equinovarus",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0010648",
+          "label": "Dermal translucency",
+          "frequency": "occasional",
+          "in_hpoa": false
+        },
+        {
+          "hpo_id": "HP:0000768",
+          "label": "Pectus carinatum",
+          "frequency": "occasional",
+          "in_hpoa": true
+        }
+      ],
+      "discriminating_features": [
+        "Bifid uvula or cleft palate (absent in Marfan)",
+        "Arterial tortuosity on head-to-pelvis CTA",
+        "Hypertelorism",
+        "Dissection at smaller aortic diameters than Marfan"
+      ],
+      "commonly_misdiagnosed_as": [
+        "Marfan syndrome",
+        "Vascular Ehlers-Danlos syndrome"
+      ],
+      "recommended_test": {
+        "type": "Targeted gene panel",
+        "panel_name": "Thoracic Aortic Aneurysm / Connective Tissue Panel",
+        "genes": [
+          "TGFBR1",
+          "TGFBR2",
+          "SMAD3",
+          "TGFB2",
+          "TGFB3",
+          "FBN1"
+        ],
+        "turnaround": "2-4 weeks",
+        "adjunct": [
+          "Head-to-pelvis CT or MR angiography",
+          "Echocardiogram"
+        ]
+      },
+      "red_flags": [
+        "Aneurysms rupture at smaller diameters - lower the surgical threshold",
+        "Whole-arterial-tree imaging required, not just the aortic root"
+      ],
+      "trial_query": "Loeys-Dietz Syndrome",
+      "source": "Orphanet ORPHA:60030 / OMIM 609192 / HPO 2025-09-01"
+    },
+    {
+      "id": "ORPHA:286",
+      "omim": "130050",
+      "name": "Vascular Ehlers-Danlos syndrome (vEDS)",
+      "inheritance": "Autosomal dominant",
+      "prevalence": "1-9 / 100,000",
+      "organ_systems": [
+        "cardiovascular",
+        "gastrointestinal",
+        "cutaneous",
+        "obstetric"
+      ],
+      "phenotypes": [
+        {
+          "hpo_id": "HP:0002647",
+          "label": "Aortic dissection",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0005294",
+          "label": "Arterial dissection",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000978",
+          "label": "Bruising susceptibility",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0010648",
+          "label": "Dermal translucency",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0005244",
+          "label": "Gastrointestinal infarctions",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002107",
+          "label": "Pneumothorax",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0007495",
+          "label": "Prematurely aged appearance",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001762",
+          "label": "Talipes equinovarus",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000963",
+          "label": "Thin skin",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000233",
+          "label": "Thin vermilion border",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002619",
+          "label": "Varicose veins",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001073",
+          "label": "Cigarette-paper scars",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000490",
+          "label": "Deeply set eye",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001382",
+          "label": "Joint hypermobility",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0100718",
+          "label": "Uterine rupture",
+          "frequency": "occasional",
+          "in_hpoa": true
+        }
+      ],
+      "discriminating_features": [
+        "Translucent skin with visible subcutaneous veins",
+        "Spontaneous arterial, bowel or uterine rupture",
+        "Characteristic thin, pinched facies",
+        "Hypermobility often limited to small joints only"
+      ],
+      "commonly_misdiagnosed_as": [
+        "Hypermobile EDS",
+        "Marfan syndrome",
+        "Child abuse (in paediatrics)"
+      ],
+      "recommended_test": {
+        "type": "Targeted gene panel",
+        "panel_name": "EDS / Connective Tissue Panel",
+        "genes": [
+          "COL3A1",
+          "COL1A1",
+          "TGFBR1",
+          "TGFBR2"
+        ],
+        "turnaround": "2-3 weeks",
+        "adjunct": [
+          "Non-invasive vascular imaging (avoid arteriography)"
+        ]
+      },
+      "red_flags": [
+        "AVOID invasive arteriography and elective vascular procedures - high rupture risk",
+        "Acute abdominal or chest pain warrants immediate imaging",
+        "Pregnancy carries substantial maternal mortality - refer to high-risk obstetrics"
+      ],
+      "trial_query": "Vascular Ehlers-Danlos Syndrome",
+      "source": "Orphanet ORPHA:286 / OMIM 130050 / HPO 2025-09-01"
+    },
+    {
+      "id": "ORPHA:324",
+      "omim": "301500",
+      "name": "Fabry disease",
+      "inheritance": "X-linked",
+      "prevalence": "1-9 / 100,000",
+      "organ_systems": [
+        "renal",
+        "cardiovascular",
+        "neurologic",
+        "cutaneous",
+        "ocular"
+      ],
+      "phenotypes": [
+        {
+          "hpo_id": "HP:0002027",
+          "label": "Abdominal pain",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0031006",
+          "label": "Acroparesthesia",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001014",
+          "label": "Angiokeratoma",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0500008",
+          "label": "Cornea verticillata",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0034864",
+          "label": "Decreased alpha-galactosidase A activity",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0012378",
+          "label": "Fatigue",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002046",
+          "label": "Heat intolerance",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000966",
+          "label": "Hypohidrosis",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000093",
+          "label": "Proteinuria",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000083",
+          "label": "Renal insufficiency",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000360",
+          "label": "Tinnitus",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002326",
+          "label": "Transient ischemic attack",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001639",
+          "label": "Hypertrophic cardiomyopathy",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001712",
+          "label": "Left ventricular hypertrophy",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000407",
+          "label": "Sensorineural hearing impairment",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001297",
+          "label": "Stroke",
+          "frequency": "occasional",
+          "in_hpoa": true
+        }
+      ],
+      "discriminating_features": [
+        "Cornea verticillata on slit lamp (whorl-like corneal opacity)",
+        "Burning acroparesthesias of hands and feet since childhood",
+        "Angiokeratomas in the bathing-trunk distribution",
+        "Unexplained LVH plus proteinuria plus early stroke in one patient"
+      ],
+      "commonly_misdiagnosed_as": [
+        "Fibromyalgia",
+        "Rheumatic fever",
+        "Multiple sclerosis",
+        "Hypertrophic cardiomyopathy (isolated)",
+        "Growing pains"
+      ],
+      "recommended_test": {
+        "type": "Enzyme assay then targeted sequencing",
+        "panel_name": "Alpha-galactosidase A activity (males) + GLA sequencing (all)",
+        "genes": [
+          "GLA"
+        ],
+        "turnaround": "1-2 weeks (enzyme), 2-3 weeks (sequencing)",
+        "adjunct": [
+          "Plasma lyso-Gb3",
+          "Urine protein/creatinine ratio",
+          "Echocardiogram",
+          "Slit-lamp exam"
+        ]
+      },
+      "red_flags": [
+        "Enzyme assay is UNRELIABLE in heterozygous females - sequence GLA regardless",
+        "Disease-specific therapy exists (ERT / chaperone) - diagnosis changes management immediately"
+      ],
+      "trial_query": "Fabry Disease",
+      "source": "Orphanet ORPHA:324 / OMIM 301500 / HPO 2025-09-01"
+    },
+    {
+      "id": "ORPHA:905",
+      "omim": "277900",
+      "name": "Wilson disease",
+      "inheritance": "Autosomal recessive",
+      "prevalence": "1-9 / 100,000",
+      "organ_systems": [
+        "hepatic",
+        "neurologic",
+        "psychiatric",
+        "ocular",
+        "hematologic"
+      ],
+      "phenotypes": [
+        {
+          "hpo_id": "HP:0006554",
+          "label": "Acute hepatic failure",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002072",
+          "label": "Chorea",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001394",
+          "label": "Cirrhosis",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0010837",
+          "label": "Decreased circulating ceruloplasmin concentration",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001260",
+          "label": "Dysarthria",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001332",
+          "label": "Dystonia",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002910",
+          "label": "Elevated circulating hepatic transaminase concentration",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001878",
+          "label": "Hemolytic anemia",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002240",
+          "label": "Hepatomegaly",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000952",
+          "label": "Jaundice",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0200032",
+          "label": "Kayser-Fleischer ring",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000751",
+          "label": "Personality changes",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001337",
+          "label": "Tremor",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000709",
+          "label": "Psychosis",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:6000642",
+          "label": "Sunflower cataract",
+          "frequency": "occasional",
+          "in_hpoa": true
+        }
+      ],
+      "discriminating_features": [
+        "Kayser-Fleischer rings on slit lamp",
+        "Low serum ceruloplasmin with high 24h urinary copper",
+        "Coombs-negative haemolytic anaemia with acute liver failure",
+        "Neuropsychiatric symptoms in a young patient with abnormal LFTs"
+      ],
+      "commonly_misdiagnosed_as": [
+        "Autoimmune hepatitis",
+        "Non-alcoholic fatty liver disease",
+        "Primary psychiatric disorder",
+        "Essential tremor",
+        "Juvenile Parkinsonism"
+      ],
+      "recommended_test": {
+        "type": "Biochemical then targeted sequencing",
+        "panel_name": "Serum ceruloplasmin + 24h urinary copper, then ATP7B sequencing",
+        "genes": [
+          "ATP7B"
+        ],
+        "turnaround": "3-7 days (biochem), 2-3 weeks (sequencing)",
+        "adjunct": [
+          "Slit-lamp exam for KF rings",
+          "Liver biopsy copper quantification if equivocal"
+        ]
+      },
+      "red_flags": [
+        "TREATABLE - chelation prevents irreversible neurological injury; do not delay",
+        "Screen all first-degree relatives once a proband is confirmed"
+      ],
+      "trial_query": "Wilson Disease",
+      "source": "Orphanet ORPHA:905 / OMIM 277900 / HPO 2025-09-01"
+    },
+    {
+      "id": "ORPHA:77259",
+      "omim": "230800",
+      "name": "Gaucher disease type 1",
+      "inheritance": "Autosomal recessive",
+      "prevalence": "1-9 / 100,000",
+      "organ_systems": [
+        "hematologic",
+        "hepatic",
+        "skeletal"
+      ],
+      "phenotypes": [
+        {
+          "hpo_id": "HP:0001903",
+          "label": "Anemia",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0010885",
+          "label": "Avascular necrosis",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002653",
+          "label": "Bone pain",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000978",
+          "label": "Bruising susceptibility",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0003656",
+          "label": "Decreased beta-glucocerebrosidase level",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001510",
+          "label": "Growth delay",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001433",
+          "label": "Hepatosplenomegaly",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000938",
+          "label": "Osteopenia",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001744",
+          "label": "Splenomegaly",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001873",
+          "label": "Thrombocytopenia",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0032640",
+          "label": "Elevated circulating CCL18 concentration",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0004975",
+          "label": "Erlenmeyer flask deformity of the femurs",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0012378",
+          "label": "Fatigue",
+          "frequency": "occasional",
+          "in_hpoa": false
+        },
+        {
+          "hpo_id": "HP:0002756",
+          "label": "Pathologic fracture",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002092",
+          "label": "Pulmonary arterial hypertension",
+          "frequency": "occasional",
+          "in_hpoa": true
+        }
+      ],
+      "discriminating_features": [
+        "Massive splenomegaly with thrombocytopenia and no clear cause",
+        "Erlenmeyer flask deformity of the distal femur on plain film",
+        "Bone crises misread as osteomyelitis"
+      ],
+      "commonly_misdiagnosed_as": [
+        "Immune thrombocytopenic purpura",
+        "Haematological malignancy",
+        "Osteomyelitis",
+        "Juvenile idiopathic arthritis"
+      ],
+      "recommended_test": {
+        "type": "Enzyme assay then targeted sequencing",
+        "panel_name": "Beta-glucocerebrosidase activity (dried blood spot) + GBA1 sequencing",
+        "genes": [
+          "GBA1"
+        ],
+        "turnaround": "1-2 weeks",
+        "adjunct": [
+          "Plasma glucosylsphingosine (lyso-Gb1)",
+          "MRI femur for marrow burden"
+        ]
+      },
+      "red_flags": [
+        "TREATABLE with enzyme replacement / substrate reduction therapy",
+        "Avoid splenectomy before diagnosis - it accelerates bone and liver disease"
+      ],
+      "trial_query": "Gaucher Disease",
+      "source": "Orphanet ORPHA:77259 / OMIM 230800 / HPO 2025-09-01"
+    },
+    {
+      "id": "ORPHA:365",
+      "omim": "232300",
+      "name": "Pompe disease (acid maltase deficiency)",
+      "inheritance": "Autosomal recessive",
+      "prevalence": "1-9 / 100,000",
+      "organ_systems": [
+        "muscular",
+        "respiratory",
+        "cardiovascular"
+      ],
+      "phenotypes": [
+        {
+          "hpo_id": "HP:0034932",
+          "label": "Decreased circulating acid maltase activity",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0003551",
+          "label": "Difficulty climbing stairs",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0003458",
+          "label": "EMG: myopathic abnormalities",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0003236",
+          "label": "Elevated circulating creatine kinase activity",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0003546",
+          "label": "Exercise intolerance",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0003391",
+          "label": "Gowers sign",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0009073",
+          "label": "Progressive proximal muscle weakness",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002747",
+          "label": "Respiratory insufficiency due to muscle weakness",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0009113",
+          "label": "Diaphragmatic weakness",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0008947",
+          "label": "Floppy infant",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0003307",
+          "label": "Hyperlordosis",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001639",
+          "label": "Hypertrophic cardiomyopathy",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000158",
+          "label": "Macroglossia",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0012764",
+          "label": "Orthopnea",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0010535",
+          "label": "Sleep apnea",
+          "frequency": "occasional",
+          "in_hpoa": true
+        }
+      ],
+      "discriminating_features": [
+        "Respiratory failure OUT OF PROPORTION to limb weakness",
+        "Orthopnea / nocturnal hypoventilation as a presenting complaint",
+        "Cardiomegaly with short PR interval in the infantile form"
+      ],
+      "commonly_misdiagnosed_as": [
+        "Limb-girdle muscular dystrophy",
+        "Polymyositis",
+        "Spinal muscular atrophy",
+        "Idiopathic hyperCKemia"
+      ],
+      "recommended_test": {
+        "type": "Enzyme assay then targeted sequencing",
+        "panel_name": "GAA enzyme activity (dried blood spot) + GAA sequencing",
+        "genes": [
+          "GAA"
+        ],
+        "turnaround": "1-2 weeks",
+        "adjunct": [
+          "Upright and supine forced vital capacity",
+          "CK",
+          "ECG/echocardiogram"
+        ]
+      },
+      "red_flags": [
+        "TREATABLE with enzyme replacement therapy - earlier start, better outcome",
+        "Check supine FVC; a normal seated FVC can hide diaphragmatic failure"
+      ],
+      "trial_query": "Pompe Disease",
+      "source": "Orphanet ORPHA:365 / OMIM 232300 / HPO 2025-09-01"
+    },
+    {
+      "id": "ORPHA:465508",
+      "omim": "235200",
+      "name": "HFE-related hereditary hemochromatosis",
+      "inheritance": "Autosomal recessive",
+      "prevalence": "1-5 / 10,000",
+      "organ_systems": [
+        "hepatic",
+        "endocrine",
+        "cardiovascular",
+        "musculoskeletal"
+      ],
+      "phenotypes": [
+        {
+          "hpo_id": "HP:0003040",
+          "label": "Arthropathy",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0012463",
+          "label": "Elevated transferrin saturation",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0012378",
+          "label": "Fatigue",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0007574",
+          "label": "Generalized bronze hyperpigmentation",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002240",
+          "label": "Hepatomegaly",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0003281",
+          "label": "Increased circulating ferritin concentration",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000141",
+          "label": "Amenorrhea",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002829",
+          "label": "Arthralgia",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001638",
+          "label": "Cardiomyopathy",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001394",
+          "label": "Cirrhosis",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000819",
+          "label": "Diabetes mellitus",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0100639",
+          "label": "Erectile dysfunction",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001402",
+          "label": "Hepatocellular carcinoma",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000044",
+          "label": "Hypogonadotropic hypogonadism",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0005198",
+          "label": "Stiff interphalangeal joints",
+          "frequency": "occasional",
+          "in_hpoa": true
+        }
+      ],
+      "discriminating_features": [
+        "Transferrin saturation >45% with raised ferritin",
+        "2nd and 3rd MCP joint arthropathy ('iron fist')",
+        "Bronze skin plus diabetes plus hepatomegaly"
+      ],
+      "commonly_misdiagnosed_as": [
+        "Alcoholic liver disease",
+        "Non-alcoholic fatty liver disease",
+        "Rheumatoid arthritis",
+        "Type 2 diabetes (isolated)"
+      ],
+      "recommended_test": {
+        "type": "Biochemical then targeted genotyping",
+        "panel_name": "Fasting transferrin saturation + ferritin, then HFE genotyping (C282Y/H63D)",
+        "genes": [
+          "HFE",
+          "HJV",
+          "HAMP",
+          "TFR2",
+          "SLC40A1"
+        ],
+        "turnaround": "1 week (biochem), 1-2 weeks (genotype)",
+        "adjunct": [
+          "Hepatic MRI T2* for iron quantification",
+          "Liver fibrosis staging if ferritin >1000"
+        ]
+      },
+      "red_flags": [
+        "TREATABLE with phlebotomy - cirrhosis and cardiomyopathy are preventable if caught early",
+        "Ferritin >1000 ng/mL warrants fibrosis assessment"
+      ],
+      "trial_query": "Hemochromatosis",
+      "source": "Orphanet ORPHA:465508 / OMIM 235200 / HPO 2025-09-01"
+    },
+    {
+      "id": "ORPHA:774",
+      "omim": "187300",
+      "name": "Hereditary hemorrhagic telangiectasia (Osler-Weber-Rendu)",
+      "inheritance": "Autosomal dominant",
+      "prevalence": "1-9 / 100,000",
+      "organ_systems": [
+        "vascular",
+        "pulmonary",
+        "hepatic",
+        "neurologic",
+        "gastrointestinal"
+      ],
+      "phenotypes": [
+        {
+          "hpo_id": "HP:0001903",
+          "label": "Anemia",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0006574",
+          "label": "Hepatic arteriovenous malformation",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000214",
+          "label": "Lip telangiectasia",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002076",
+          "label": "Migraine",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0100579",
+          "label": "Mucosal telangiectasiae",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0006548",
+          "label": "Pulmonary arteriovenous malformation",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0004406",
+          "label": "Spontaneous, recurrent epistaxis",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0100585",
+          "label": "Telangiectasia of the skin",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000227",
+          "label": "Tongue telangiectasia",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002408",
+          "label": "Cerebral arteriovenous malformation",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001342",
+          "label": "Cerebral hemorrhage",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002239",
+          "label": "Gastrointestinal hemorrhage",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002105",
+          "label": "Hemoptysis",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002092",
+          "label": "Pulmonary arterial hypertension",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002326",
+          "label": "Transient ischemic attack",
+          "frequency": "occasional",
+          "in_hpoa": true
+        }
+      ],
+      "discriminating_features": [
+        "Recurrent spontaneous epistaxis since childhood plus family history",
+        "Mucocutaneous telangiectases on lips, tongue and fingertips",
+        "Paradoxical embolic stroke or brain abscess from a pulmonary AVM",
+        "Curacao criteria: 3 of 4 = definite"
+      ],
+      "commonly_misdiagnosed_as": [
+        "Idiopathic epistaxis",
+        "Iron deficiency anaemia of unknown cause",
+        "Cryptogenic stroke"
+      ],
+      "recommended_test": {
+        "type": "Targeted gene panel",
+        "panel_name": "HHT Panel",
+        "genes": [
+          "ENG",
+          "ACVRL1",
+          "SMAD4",
+          "GDF2"
+        ],
+        "turnaround": "2-3 weeks",
+        "adjunct": [
+          "Contrast (bubble) transthoracic echocardiography to screen for pulmonary AVM",
+          "Brain MRI",
+          "Ferritin/CBC"
+        ]
+      },
+      "red_flags": [
+        "Untreated pulmonary AVM causes brain abscess and paradoxical stroke - screen everyone",
+        "SMAD4 variants imply juvenile polyposis - add GI surveillance"
+      ],
+      "trial_query": "Hereditary Hemorrhagic Telangiectasia",
+      "source": "Orphanet ORPHA:774 / OMIM 187300 / HPO 2025-09-01"
+    },
+    {
+      "id": "ORPHA:63",
+      "omim": "301050",
+      "name": "Alport syndrome",
+      "inheritance": "X-linked (85%), autosomal recessive or dominant",
+      "prevalence": "1-9 / 100,000",
+      "organ_systems": [
+        "renal",
+        "auditory",
+        "ocular"
+      ],
+      "phenotypes": [
+        {
+          "hpo_id": "HP:0030034",
+          "label": "Glomerular basement membrane lamellation",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000790",
+          "label": "Hematuria",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000822",
+          "label": "Hypertension",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000093",
+          "label": "Proteinuria",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000083",
+          "label": "Renal insufficiency",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0012577",
+          "label": "Thin glomerular basement membrane",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0011501",
+          "label": "Anterior lenticonus",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000097",
+          "label": "Focal segmental glomerulosclerosis",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002907",
+          "label": "Microscopic hematuria",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000123",
+          "label": "Nephritis",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0007787",
+          "label": "Posterior subcapsular cataract",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000495",
+          "label": "Recurrent corneal erosions",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0012045",
+          "label": "Retinal flecks",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000407",
+          "label": "Sensorineural hearing impairment",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0003774",
+          "label": "Stage 5 chronic kidney disease",
+          "frequency": "occasional",
+          "in_hpoa": true
+        }
+      ],
+      "discriminating_features": [
+        "Persistent microscopic haematuria plus sensorineural deafness",
+        "Anterior lenticonus is essentially pathognomonic",
+        "Basket-weave GBM lamellation on electron microscopy",
+        "Family history of renal failure in young males"
+      ],
+      "commonly_misdiagnosed_as": [
+        "IgA nephropathy",
+        "Thin basement membrane nephropathy",
+        "Focal segmental glomerulosclerosis (idiopathic)"
+      ],
+      "recommended_test": {
+        "type": "Targeted gene panel",
+        "panel_name": "Hereditary Nephropathy / Alport Panel",
+        "genes": [
+          "COL4A5",
+          "COL4A3",
+          "COL4A4"
+        ],
+        "turnaround": "2-3 weeks",
+        "adjunct": [
+          "Audiometry",
+          "Ophthalmology exam",
+          "Urine protein/creatinine ratio"
+        ]
+      },
+      "red_flags": [
+        "Early ACE inhibition delays renal failure by years - diagnosis is time-critical",
+        "Do not dismiss isolated microscopic haematuria in a child with deafness"
+      ],
+      "trial_query": "Alport Syndrome",
+      "source": "Orphanet ORPHA:63 / OMIM 301050 / HPO 2025-09-01"
+    },
+    {
+      "id": "ORPHA:805",
+      "omim": "191100",
+      "name": "Tuberous sclerosis complex",
+      "inheritance": "Autosomal dominant",
+      "prevalence": "1-9 / 100,000",
+      "organ_systems": [
+        "neurologic",
+        "cutaneous",
+        "renal",
+        "cardiac",
+        "pulmonary"
+      ],
+      "phenotypes": [
+        {
+          "hpo_id": "HP:0010615",
+          "label": "Angiofibromas",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000717",
+          "label": "Autism",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0009729",
+          "label": "Cardiac rhabdomyoma",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0009717",
+          "label": "Cortical tubers",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0007359",
+          "label": "Focal-onset seizure",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0009719",
+          "label": "Hypomelanotic macule",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0012469",
+          "label": "Infantile spasms",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001249",
+          "label": "Intellectual disability",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0012798",
+          "label": "Pulmonary lymphangiomyomatosis",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0009594",
+          "label": "Retinal hamartoma",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0009721",
+          "label": "Shagreen patch",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0009716",
+          "label": "Subependymal nodules",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0006772",
+          "label": "Renal angiomyolipoma",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0009718",
+          "label": "Subependymal giant-cell astrocytoma",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0100804",
+          "label": "Ungual fibroma",
+          "frequency": "occasional",
+          "in_hpoa": true
+        }
+      ],
+      "discriminating_features": [
+        "Hypomelanotic macules seen under Wood's lamp",
+        "Facial angiofibromas often misdiagnosed as acne",
+        "Cardiac rhabdomyoma detected antenatally",
+        "Infantile spasms plus hypopigmented macules"
+      ],
+      "commonly_misdiagnosed_as": [
+        "Idiopathic epilepsy",
+        "Acne vulgaris",
+        "Idiopathic autism",
+        "Sporadic renal angiomyolipoma"
+      ],
+      "recommended_test": {
+        "type": "Targeted gene panel",
+        "panel_name": "TSC Panel",
+        "genes": [
+          "TSC1",
+          "TSC2"
+        ],
+        "turnaround": "2-3 weeks",
+        "adjunct": [
+          "Brain MRI",
+          "Renal MRI/ultrasound",
+          "Echocardiogram",
+          "Wood's lamp skin exam",
+          "EEG"
+        ]
+      },
+      "red_flags": [
+        "mTOR inhibitors (everolimus) treat SEGA, angiomyolipoma and LAM - diagnosis unlocks therapy",
+        "Renal angiomyolipoma >3cm carries haemorrhage risk"
+      ],
+      "trial_query": "Tuberous Sclerosis Complex",
+      "source": "Orphanet ORPHA:805 / OMIM 191100 / HPO 2025-09-01"
+    },
+    {
+      "id": "ORPHA:636",
+      "omim": "162200",
+      "name": "Neurofibromatosis type 1",
+      "inheritance": "Autosomal dominant",
+      "prevalence": "1-5 / 10,000",
+      "organ_systems": [
+        "cutaneous",
+        "neurologic",
+        "ocular",
+        "skeletal"
+      ],
+      "phenotypes": [
+        {
+          "hpo_id": "HP:0007018",
+          "label": "Attention deficit hyperactivity disorder",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000997",
+          "label": "Axillary freckling",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0030052",
+          "label": "Inguinal freckling",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0009737",
+          "label": "Lisch nodules",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0007565",
+          "label": "Multiple cafe-au-lait spots",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0009732",
+          "label": "Plexiform neurofibroma",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0003100",
+          "label": "Slender long bone",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001328",
+          "label": "Specific learning disability",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000822",
+          "label": "Hypertension",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000256",
+          "label": "Macrocephaly",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0009734",
+          "label": "Optic nerve glioma",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002666",
+          "label": "Pheochromocytoma",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002650",
+          "label": "Scoliosis",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0004322",
+          "label": "Short stature",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0009735",
+          "label": "Spinal neurofibroma",
+          "frequency": "occasional",
+          "in_hpoa": true
+        }
+      ],
+      "discriminating_features": [
+        "Six or more cafe-au-lait macules plus skinfold freckling",
+        "Lisch nodules on slit lamp (present in most adults)",
+        "Tibial dysplasia / pseudarthrosis"
+      ],
+      "commonly_misdiagnosed_as": [
+        "Legius syndrome",
+        "McCune-Albright syndrome",
+        "Constitutional mismatch repair deficiency",
+        "Isolated ADHD"
+      ],
+      "recommended_test": {
+        "type": "Targeted gene panel",
+        "panel_name": "NF / RASopathy Panel",
+        "genes": [
+          "NF1",
+          "SPRED1",
+          "NF2",
+          "LZTR1"
+        ],
+        "turnaround": "3-4 weeks",
+        "adjunct": [
+          "Slit-lamp exam for Lisch nodules",
+          "Whole-body MRI if plexiform tumour suspected",
+          "Annual blood pressure (phaeochromocytoma / renal artery stenosis)"
+        ]
+      },
+      "red_flags": [
+        "SPRED1 testing distinguishes Legius syndrome - it has no tumour risk, so this changes surveillance",
+        "New pain or rapid growth in a plexiform neurofibroma suggests malignant transformation"
+      ],
+      "trial_query": "Neurofibromatosis Type 1",
+      "source": "Orphanet ORPHA:636 / OMIM 162200 / HPO 2025-09-01"
+    },
+    {
+      "id": "ORPHA:550",
+      "omim": "540000",
+      "name": "MELAS (mitochondrial encephalomyopathy, lactic acidosis, stroke-like episodes)",
+      "inheritance": "Mitochondrial (maternal)",
+      "prevalence": "1-9 / 100,000",
+      "organ_systems": [
+        "neurologic",
+        "muscular",
+        "endocrine",
+        "auditory",
+        "cardiovascular"
+      ],
+      "phenotypes": [
+        {
+          "hpo_id": "HP:0000726",
+          "label": "Dementia",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001298",
+          "label": "Encephalopathy",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002490",
+          "label": "Increased CSF lactate",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002151",
+          "label": "Increased circulating lactate concentration",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002076",
+          "label": "Migraine",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001324",
+          "label": "Muscle weakness",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0003200",
+          "label": "Ragged-red muscle fibers",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002331",
+          "label": "Recurrent paroxysmal headache",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001250",
+          "label": "Seizure",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000407",
+          "label": "Sensorineural hearing impairment",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0004322",
+          "label": "Short stature",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002401",
+          "label": "Stroke-like episode",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0012707",
+          "label": "Elevated brain lactate level by MRS",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0003546",
+          "label": "Exercise intolerance",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001639",
+          "label": "Hypertrophic cardiomyopathy",
+          "frequency": "occasional",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0005978",
+          "label": "Type II diabetes mellitus",
+          "frequency": "occasional",
+          "in_hpoa": true
+        }
+      ],
+      "discriminating_features": [
+        "Stroke-like lesions that do NOT respect vascular territories",
+        "Diabetes plus sensorineural deafness in a maternal inheritance pattern",
+        "Raised lactate in blood or CSF",
+        "Short stature with migraine and seizures"
+      ],
+      "commonly_misdiagnosed_as": [
+        "Ischaemic stroke",
+        "Viral encephalitis",
+        "Complex migraine",
+        "Idiopathic epilepsy",
+        "Type 2 diabetes (isolated)"
+      ],
+      "recommended_test": {
+        "type": "Mitochondrial DNA testing",
+        "panel_name": "mtDNA targeted analysis (m.3243A>G) then full mtDNA sequencing",
+        "genes": [
+          "MT-TL1",
+          "MT-ND5",
+          "MT-TK"
+        ],
+        "turnaround": "2-4 weeks",
+        "adjunct": [
+          "Blood AND urine sediment sampling (heteroplasmy is low in blood)",
+          "Serum/CSF lactate",
+          "Brain MRI with MR spectroscopy"
+        ]
+      },
+      "red_flags": [
+        "Test URINE or buccal cells - a negative blood test does not exclude MELAS",
+        "AVOID valproate and metformin; both can precipitate crises",
+        "Maternal relatives are at risk - offer family testing"
+      ],
+      "trial_query": "MELAS Syndrome",
+      "source": "Orphanet ORPHA:550 / OMIM 540000 / HPO 2025-09-01"
+    },
+    {
+      "id": "OMIM:109650",
+      "omim": "109650",
+      "name": "Behcet syndrome",
+      "inheritance": "Complex / multifactorial",
+      "prevalence": "1-9 / 100,000",
+      "organ_systems": [
+        "mucocutaneous",
+        "ocular",
+        "vascular",
+        "musculoskeletal"
+      ],
+      "phenotypes": [
+        {
+          "hpo_id": "HP:0001369",
+          "label": "Arthritis",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0012424",
+          "label": "Chorioretinitis",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000031",
+          "label": "Epididymitis",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0010783",
+          "label": "Erythema",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0012219",
+          "label": "Erythema nodosum",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0003249",
+          "label": "Genital ulcers",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0031615",
+          "label": "Hypopyon",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001094",
+          "label": "Iridocyclitis",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001101",
+          "label": "Iritis",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000737",
+          "label": "Irritability",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000155",
+          "label": "Oral ulcer",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002232",
+          "label": "Patchy alopecia",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0030880",
+          "label": "Raynaud phenomenon",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002638",
+          "label": "Superficial thrombophlebitis",
+          "frequency": "frequent",
+          "in_hpoa": true
+        }
+      ],
+      "discriminating_features": [
+        "Recurrent oral ulceration at least 3x/year plus genital ulceration",
+        "Hypopyon uveitis",
+        "Pathergy reaction at needle-prick sites",
+        "Venous thrombosis in a young patient with mucosal ulcers"
+      ],
+      "commonly_misdiagnosed_as": [
+        "Recurrent aphthous stomatitis",
+        "Inflammatory bowel disease",
+        "Herpes simplex",
+        "Reactive arthritis"
+      ],
+      "recommended_test": {
+        "type": "Clinical criteria plus supportive testing",
+        "panel_name": "ISG/ICBD clinical criteria; HLA-B51 typing is supportive, not diagnostic",
+        "genes": [
+          "HLA-B51"
+        ],
+        "turnaround": "1-2 weeks",
+        "adjunct": [
+          "Pathergy test",
+          "Ophthalmology review within days if ocular symptoms",
+          "ESR/CRP"
+        ]
+      },
+      "red_flags": [
+        "Ocular involvement threatens sight - same-week ophthalmology referral",
+        "Not a monogenic disorder; gene panel is NOT the right test here"
+      ],
+      "trial_query": "Behcet Syndrome",
+      "source": "OMIM 109650 / HPO 2025-09-01"
+    },
+    {
+      "id": "ORPHA:567",
+      "omim": "192430",
+      "name": "22q11.2 deletion syndrome (DiGeorge / velocardiofacial)",
+      "inheritance": "Autosomal dominant (usually de novo)",
+      "prevalence": "1-5 / 10,000",
+      "organ_systems": [
+        "cardiovascular",
+        "immunologic",
+        "endocrine",
+        "craniofacial",
+        "neurodevelopmental"
+      ],
+      "phenotypes": [
+        {
+          "hpo_id": "HP:0012303",
+          "label": "Abnormal aortic arch morphology",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000175",
+          "label": "Cleft palate",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001263",
+          "label": "Global developmental delay",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001611",
+          "label": "Hypernasal speech",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002901",
+          "label": "Hypocalcemia",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000829",
+          "label": "Hypoparathyroidism",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000778",
+          "label": "Hypoplasia of the thymus",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0002721",
+          "label": "Immunodeficiency",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000276",
+          "label": "Long face",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000426",
+          "label": "Prominent nasal bridge",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001328",
+          "label": "Specific learning disability",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001636",
+          "label": "Tetralogy of Fallot",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001660",
+          "label": "Truncus arteriosus",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0001629",
+          "label": "Ventricular septal defect",
+          "frequency": "frequent",
+          "in_hpoa": true
+        },
+        {
+          "hpo_id": "HP:0000403",
+          "label": "Recurrent otitis media",
+          "frequency": "occasional",
+          "in_hpoa": false
+        },
+        {
+          "hpo_id": "HP:0100753",
+          "label": "Schizophrenia",
+          "frequency": "occasional",
+          "in_hpoa": true
+        }
+      ],
+      "discriminating_features": [
+        "Conotruncal cardiac defect plus hypocalcaemia plus recurrent infection",
+        "Velopharyngeal insufficiency with hypernasal speech",
+        "Markedly elevated lifetime risk of psychotic illness"
+      ],
+      "commonly_misdiagnosed_as": [
+        "Isolated congenital heart disease",
+        "Idiopathic developmental delay",
+        "Primary immunodeficiency (isolated)",
+        "Primary schizophrenia"
+      ],
+      "recommended_test": {
+        "type": "Chromosomal microarray / targeted deletion analysis",
+        "panel_name": "Chromosomal microarray (CMA) or FISH/MLPA for 22q11.2",
+        "genes": [
+          "TBX1",
+          "COMT",
+          "22q11.2 region"
+        ],
+        "turnaround": "2-3 weeks",
+        "adjunct": [
+          "Ionised calcium and PTH",
+          "Lymphocyte subsets / T-cell counts",
+          "Echocardiogram",
+          "Renal ultrasound"
+        ]
+      },
+      "red_flags": [
+        "Sequencing panels MISS this - a deletion needs microarray, FISH or MLPA",
+        "Give irradiated blood products until T-cell function is confirmed",
+        "Check calcium before any surgery"
+      ],
+      "trial_query": "22q11.2 Deletion Syndrome",
+      "source": "Orphanet ORPHA:567 / OMIM 192430 / HPO 2025-09-01"
+    }
+  ]
+}
