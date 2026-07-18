@@ -1,0 +1,8 @@
+.env
+venv/
+.DS_Store
+__pycache__/
+*.pyc
+app/data/hp.json
+app/data/phenotype.hpoa
+app/data/abridge/
